@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Developer Tools in Instanbul - December 6, 2016</title>
+
+		<link rel="stylesheet" href="../../css/reveal.css">
+		<link rel="stylesheet" href="../../css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../../lib/css/zenburn.css">
+<style type="text/css">
+    /* 1. Style header/footer <div> so they are positioned as desired. */
+    #header-left {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+    #header-right {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+    }
+    #footer-left {
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+    }
+    #footer-right {
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+    }
+
+</style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../../ css/print/pdf.css' : '../../css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+
+<!-- 2. Create hidden header/footer <div> -->
+<div id="hidden" style="display:none;">
+    <div id="header">
+        <div id="header-left"><img src="images/SN_Twitter_profile_image.png" width="150" height="150" /></div>
+        <div id="footer-right">Developer.ServiceNow.com</div>
+        <div id="footer-left">@DaveSlusherNOW</div>
+    </div>
+</div>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Developer Tools in Istanbul</h2>
+					<p>
+						<small>December 6, 2016 - London Developer Meetup</small>
+						<small>Dave Slusher / dave.slusher@servicenow.com / <a href="http://twitter.com/DaveSlusherNOW">@DaveSlusherNOW</a></small>
+					</p>
+				</section>
+				<section>
+					<h2>More Information and Free Developer Instances
+					Available at developer.servicenow.com</h2>
+				<img src="images/SN_Twitter_Cover_image.png"  />
+
+				</section>
+				<section>
+					<h2>CreatorCon Challenge</h2>
+				<img src="images/CreatorConChallenge.png"  />
+				<h3>Transform Your Startup on the ServiceNow Platform</h3>
+       <a href="http://www.servicenow.com/creatorconchallenge">http://www.servicenow.com/creatorconchallenge</a>
+
+				</section>
+				<section>
+					<h2>CreatorCon Challenge</h2>
+				<img src="images/CreatorConBullets.png"  />
+				</section>
+				<section >
+					<span>
+						<h2>Agenda</h2>
+					
+						<ul>
+							<span class="fragment"><li>Overview of Istanbul Release</li></span>
+							<span class="fragment"><li>Javascript Debugger</li></span>
+							<span class="fragment"><li>Automated Testing Framework</li></span>
+							<span class="fragment"><li>Source Control Improvements</li></span>
+							<span class="fragment"><li>Licensing</li></span>
+						</ul>
+					</span>
+					<aside class="notes">These are speaker notes
+					</aside>
+				</section>
+				<section>
+					<section >
+						<span>
+							<h2>Istanbul Release</h2>
+						
+							<ul>
+								<span class="fragment"><li>In Early Access Now</li></span>
+								<span class="fragment"><li>Available in Personal Developer Instances</li></span>
+								<span class="fragment"><li>Will be Available for Hackathon</li></span>
+							</ul>
+						</span>
+						<aside class="notes">
+						</aside>
+					</section>
+					<section>
+						<span>
+							<h2>JavaScript Debugger</h2>
+						
+							<ul>
+								<span class="fragment"><li><b>Not</b> the Debugger from pre-Fuji</li></span>
+								<span class="fragment"><li>Complete rewrite</li></span>
+								<span class="fragment"><li>Breakpoints Available in Rich Script Editor</li></span>
+							</ul><br / >
+
+							<span class="fragment"> <a href="http://helsinki/nav_to.do?uri=sp_page_list.do?sysparm_userpref_module=4a8cf44147532100ba13a5554ee49076&sysparm_clear_stack=true&sysparm_clear_stack=true&sysparm_clear_stack=true&sysparm_clear_stack=true" target="demo">Open Demo</a></span>
+						</span>
+						<aside class="notes">
+
+						</aside>
+					</section>
+				</section>
+
+
+					<section>
+						<span>
+							<h2>Invoking the JavaScript Debugger Requires All Of:</h2>
+						
+							<ul>
+								<span class="fragment"><li>Breakpoint set </li></span>
+								<span class="fragment"><li>By Current User of Interactive Session</li></span>
+								<span class="fragment"><li>Code Invoked in Session</li></span>
+								<span class="fragment"><li>JavaScript Debugger Open in Session</li></span>
+							</ul><br / >
+						</span>
+					</section>				
+				</section>
+
+
+					<section>
+						<span>
+							<h2>This Means:</h2>
+						
+							<p>You Can Debug</p>
+							<ul>
+								<span class="fragment"><li>Business Rules </li></span>
+								<span class="fragment"><li>Script Includes</li></span>
+								<span class="fragment"><li>UI Actions</li></span>
+								<span class="fragment"><li>Scripted REST API <b class="fragment">via REST Explorer</b></li></span>
+							</ul><br / >
+						</span>
+					</section>				
+					<section>
+						<span>
+							<h2>This Means:</h2>
+						
+							<p>You Cannot Debug</p>
+							<ul>
+								<span class="fragment"><li>Inbound Email Actions </li></span>
+								<span class="fragment"><li>Background Scripts (directly)</li></span>
+								<span class="fragment"><li>Scripted REST API <b class="fragment">via External Integration</b></li></span>
+							</ul><br / >
+						</span>
+					</section>	
+				<section>
+						<span>
+							<h2>JavaScript Debugger</h2>
+						
+
+							<span> <a href="http://istanbul/" target="demo">Open Demo</a></span>
+						</span>
+						<aside class="notes">
+
+						</aside>
+					</section>					
+				<section>
+					<section >
+						<span>
+							<h2>Automated Testing Framework</h2>
+						
+							<ul>
+								<span class="fragment"><li>Available as of Istanbul</li></span>
+								<span class="fragment"><li>Ships with a set of Pre-built Test Steps</li></span>
+								<span class="fragment"><li>Custom Scripting of Test Steps is possible </li></span>
+								<span class="fragment"><li>Comes with a Test Runner That Invokes the Tests </li></span>
+							</ul>
+						</span>
+						<aside class="notes">
+						</aside>
+					</section>
+					<section >
+						<span>
+							<h2>Automated Testing Framework</h2>
+						
+							<ul>
+								<span class="fragment"><li>Tests Consist of Series of Test Steps</li></span>
+								<span class="fragment"><li>Suites Consist of Sets of Tests</li></span>
+								<span class="fragment"><li>Can be Run at Test or Suite Level </li></span>
+								<span class="fragment"><li>Test Runner Actually Performs The Steps </li></span>
+							</ul>
+						</span>
+						<aside class="notes">
+						</aside>
+					</section>
+					<section >
+						<span>
+							<h2>Automated Testing Framework</h2>
+						
+							<ul>
+								<span class="fragment"><li>Results are Reported at Test and Suite Level</li></span>
+								<span class="fragment"><li>Tests Can be Configured to Cause Suite to Stop Execution</li></span>
+								<span class="fragment"><li>Logs and Screenshots are Taken </li></span>
+							</ul>
+						</span>
+						<aside class="notes">
+						</aside>
+					</section>
+				</section>
+				<section>
+					<section >
+						<span>
+							<h2>Licensing</h2>
+						
+							<ul>
+								<span class="fragment"><li>No additional license cost to develop or use Service Portal </li></span>
+								<span class="fragment"><li>The licensing is the same as using functionality through the web interface</li></span>
+							</ul>
+						</span>
+						<aside class="notes">Source Control 1 speaker notes
+						</aside>
+					</section>
+				<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+						<h2 class="fragment">There are wonderful things in here!</h2>
+						<h2  class="fragment">Let's build something impressive! </h2>
+				</section> 
+				<section>
+					<h2>Questions?</h2>
+				<img src="images/EintsteinQuestionEverything.png"  />
+
+				</section>
+				<section>
+					<h2>More Information and Free Developer Instances
+					Available at developer.servicenow.com</h2>
+					<img src="images/SN_Twitter_Cover_image.png"  />
+				</section>
+				<section>
+					<h1>Thank You!</h1>
+				</section>
+			</div>
+		</div>
+
+		<script src="../../lib/js/head.min.js"></script>
+		<script src="../../js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+				controls: true,
+				progress: true,
+				center: true,
+				
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '../../plugin/markdown/marked.js' },
+					{ src: '../../plugin/markdown/markdown.js' },
+					{ src: '../../plugin/notes/notes.js', async: true },
+					{ src: '../../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+
+		</script>
+<script src="scripts/jquery-2.2.4.min.js"></script>
+<script type="text/javascript">
+
+    // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+    var header = $('#header').html();
+    if ( window.location.search.match( /print-pdf/gi ) ) {
+        Reveal.addEventListener( 'ready', function( event ) {
+            $('.slide-background').append(header);
+        });
+    }
+    else {
+        $('div.reveal').append(header);
+   }
+   Reveal.addEventListener( 'demo', function() {
+	console.log( '"demo" has fired' );
+	setTimeout(function(){
+		var pop = window.open('http://helsinki', 'demo'); // opens in new tab on most browsers
+    }, 1000);
+} );
+			
+			Reveal.configure({
+				keyboard: {
+				40: 'next', // go to the next slide when the Inateck down key is pressed
+				38: 'prev' // go to the previous slide when the up
+		  }});
+
+</script>
+	</body>
+</html>
